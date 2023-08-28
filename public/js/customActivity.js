@@ -83,8 +83,8 @@ define([
 
         payload['arguments'].execute.inArguments = [{
             "body": body,
-            "EmailAddress": "{{Event.DEAudience-a7974921-b412-f583-5c69-c8fb100a8cc3.EmailAddress}}",
-            "SubscriberKey": "{{Event.DEAudience-a7974921-b412-f583-5c69-c8fb100a8cc3.SubscriberKey}}"
+            "EmailAddress": "{{Event.DEAudience-cff90d00-64cc-0ed5-4af8-cf6454267a81.EmailAddress}}",
+            "SubscriberKey": "{{Event.DEAudience-cff90d00-64cc-0ed5-4af8-cf6454267a81.SubscriberKey}}"
         }];
 
         payload['metaData'].isConfigured = true;
