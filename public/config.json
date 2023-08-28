@@ -20,7 +20,7 @@
                 }
             ],
             "outArguments": [],
-            "url": "https://restapica.herokuapp.com/check/execute",
+            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/execute",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -31,7 +31,7 @@
     "configurationArguments": {
         "applicationExtensionKey": "125213fc-83f4-405f-a040-296a99ef2aee",
         "save": {
-            "url": "https://restapica.herokuapp.com/check/save",
+            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/save",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -39,7 +39,7 @@
             "timeout": 2000
         },
         "publish": {
-            "url": "https://restapica.herokuapp.com/check/publish",
+            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/publish",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -47,7 +47,7 @@
             "timeout": 2000
         },
         "validate": {
-            "url": "https://restapica.herokuapp.com/check/validate",
+            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/validate",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -55,7 +55,7 @@
             "timeout": 2000
         },
         "stop": {
-            "url": "https://restapica.herokuapp.com/check/stop",
+            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
