@@ -1,0 +1,130 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "images/iconSmall.png",
+        "category": "message"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "Rest API CA",
+            "description": "Use to make API Calls from Journey Builder"
+        }
+    },
+    "arguments": {
+        "execute": {
+            "inArguments": [
+                {
+                    "EmailAddress": "{{Event.DEAudience-a7974921-b412-f583-5c69-c8fb100a8cc3.EmailAddress}}",
+                    "SubscriberKey": "{{Event.DEAudience-a7974921-b412-f583-5c69-c8fb100a8cc3.SubscriberKey}}"
+                }
+            ],
+            "outArguments": [],
+            "url": "https://restapica.herokuapp.com/check/execute",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 2000
+        }
+    },
+    "configurationArguments": {
+        "applicationExtensionKey": "125213fc-83f4-405f-a040-296a99ef2aee",
+        "save": {
+            "url": "https://restapica.herokuapp.com/check/save",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 2000
+        },
+        "publish": {
+            "url": "https://restapica.herokuapp.com/check/publish",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 2000
+        },
+        "validate": {
+            "url": "https://restapica.herokuapp.com/check/validate",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 2000
+        },
+        "stop": {
+            "url": "https://restapica.herokuapp.com/check/stop",
+            "verb": "POST",
+            "body": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 2000
+        }
+    },
+    "wizardSteps": [
+        {
+            "label": "Create SMS Message",
+            "key": "step1"
+        }
+    ],
+    "userInterfaces": {
+        "configModal": {
+            "height": 600,
+            "width": 800,
+            "fullscreen": false
+        }
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [
+                    {
+                        "accountSid": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"
+                        }
+                    },
+                    {
+                        "authToken": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"
+                        }
+                    },
+                    {
+                        "from": {
+                            "dataType": "Phone",
+                            "isNullable": true,
+                            "direction": "out"
+                        }
+                    },
+                    {
+                        "to": {
+                            "dataType": "Phone",
+                            "isNullable": false,
+                            "direction": "out"
+                        }
+                    },
+                    {
+                        "body": {
+                            "dataType": "String",
+                            "isNullable": false,
+                            "direction": "out"
+                        }
+                    },
+                    {
+                        "email": {
+                            "dataType": "Email",
+                            "isNullable": true,
+                            "direction": "out"
+                        }
+                    }
+                ],
+                "outArguments": []
+            }
+        }
+    }
+}
