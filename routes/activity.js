@@ -40,6 +40,7 @@ exports.edit = function (req, res) {
 };
 
 exports.save = function (req, res) {
+    console.log('insidesave');
     console.log(req.body);
     logData(req);
     res.send(200, 'Save');
