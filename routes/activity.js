@@ -110,7 +110,7 @@ exports.execute = function (req, res) {
 };
 
 exports.publish = function (req, res) {
-console.log('insidepublish');
+    console.log('insidepublish');
     res.send(200, 'Publish');
 };
 
@@ -119,4 +119,3 @@ exports.validate = function (req, res) {
     console.log('insidepublish');
     res.send(200, 'Validate');
 };
-
