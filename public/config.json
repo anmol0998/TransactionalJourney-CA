@@ -29,7 +29,7 @@
         }
     },
     "configurationArguments": {
-        "applicationExtensionKey": "125213fc-83f4-405f-a040-296a99ef2aee",
+        "applicationExtensionKey": "d46ff44d-8787-40c6-8cbe-124070f7ee27",
         "save": {
             "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/save",
             "verb": "POST",
