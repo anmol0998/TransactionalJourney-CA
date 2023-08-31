@@ -49,7 +49,6 @@ exports.save = function (req, res) {
 exports.execute = function (req, res) {
 
     const requestBody = req.body.inArguments[0];
-
     const SubscriberKey = requestBody.SubscriberKey;
     const EmailAddress = requestBody.EmailAddress;
     const eventDefinationKey = requestBody.body;
@@ -118,4 +117,5 @@ exports.validate = function (req, res) {
     logData(req);
     console.log('insidepublish');
     res.send(200, 'Validate');
+
 };
