@@ -28,6 +28,7 @@ define([
     }
 
   function initialize(data) {
+    console.log("Initializing data data: "+ JSON.stringify(data));
         if (data) {
             payload = data;
         }    
@@ -40,6 +41,9 @@ define([
          );
 
         var inArguments = hasInArguments ? payload['arguments'].execute.inArguments : {};
+
+        
+        console.log('Has In arguments: '+JSON.stringify(inArguments));
 
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
@@ -72,9 +76,11 @@ define([
     }
 
     function onGetTokens (tokens) {
+        console.log("Tokens function: "+JSON.stringify(tokens));
     }
 
     function onGetEndpoints (endpoints) {
+        console.log("Get End Points function: "+JSON.stringify(endpoints));
     } 
 
     function save() {
@@ -88,6 +94,7 @@ define([
         }];
 
         payload['metaData'].isConfigured = true;
+        console.log("Payload on SAVE function: "+JSON.stringify(payload));
         connection.trigger('updateActivity', payload);
 
     }                    
