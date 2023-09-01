@@ -27,6 +27,14 @@ define([
         console.log('settings'+settings);
     });
 /////////////////////////////////////////////////////////////////////////////
+
+connection.trigger('requestSchema');
+
+connection.on('requestedSchema', function (data) {
+    // save schema
+    console.log('*** Schema ***', JSON.stringify(data['schema']));
+ });
+ ///////////////////////////////////////////////////////////////////////////////
     function onRender() {
         connection.trigger('ready');
         connection.trigger('requestTokens');
