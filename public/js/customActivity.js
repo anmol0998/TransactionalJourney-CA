@@ -95,9 +95,13 @@ define([
         payload['metaData'].isConfigured = true;
         console.log("Payload on SAVE function: "+JSON.stringify(payload));
         connection.trigger('updateActivity', payload);
-        connection.on('requestedTriggerEventDefinition', function(settings) { 
-            console.log('settings',settings);
-         });
+        /////////////////////////////////////////////
+        postmonger.on('requestedInteraction', function(interaction) {
+            // Handle the interaction data received from Journey Builder
+            console.log('Interaction Data:', interaction);
+          console.log('Interaction JSON Data:', JSON.stringify(interaction));
+            // You can access the interaction data properties like interaction.id, interaction.name, etc.
+          });          
 
     }                    
 });
