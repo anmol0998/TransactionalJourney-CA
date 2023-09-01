@@ -24,7 +24,7 @@ define([
     connection.trigger('requestInteraction');
     connection.on('requestedInteraction', function (settings) {
         eventDefinitionKey = settings;
-        console.log('settings'+settings);
+        console.log('eventDefinitionKey'+eventDefinitionKey);
     });
 /////////////////////////////////////////////////////////////////////////////
 
