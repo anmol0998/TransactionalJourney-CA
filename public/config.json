@@ -20,7 +20,7 @@
                 }
             ],
             "outArguments": [],
-            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/execute",
+            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/check/execute",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -31,7 +31,7 @@
     "configurationArguments": {
         "applicationExtensionKey": "d46ff44d-8787-40c6-8cbe-124070f7ee27",
         "save": {
-            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/save",
+            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/check/save",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -39,7 +39,7 @@
             "timeout": 2000
         },
         "publish": {
-            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/publish",
+            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/check/publish",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -47,7 +47,7 @@
             "timeout": 2000
         },
         "validate": {
-            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/validate",
+            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/check/validate",
             "verb": "POST",
             "body": "",
             "format": "json",
@@ -55,7 +55,7 @@
             "timeout": 2000
         },
         "stop": {
-            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/stop",
+            "url": "https://transactionaljounrey-ca-2cc4c8acd258.herokuapp.com/check/stop",
             "verb": "POST",
             "body": "",
             "format": "json",
