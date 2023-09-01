@@ -41,7 +41,6 @@ define([
          );
 
         var inArguments = hasInArguments ? payload['arguments'].execute.inArguments : {};
-
         
         console.log('Has In arguments: '+JSON.stringify(inArguments));
 
@@ -96,6 +95,9 @@ define([
         payload['metaData'].isConfigured = true;
         console.log("Payload on SAVE function: "+JSON.stringify(payload));
         connection.trigger('updateActivity', payload);
+        connection.on('requestedTriggerEventDefinition', function(settings) { 
+            console.log('settings',settings);
+         });
 
     }                    
 });
