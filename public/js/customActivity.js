@@ -99,7 +99,7 @@ define([
         postmonger.on('requestedInteraction', function(interaction) {
             // Handle the interaction data received from Journey Builder
             console.log('Interaction Data:', interaction);
-          console.log('Interaction JSON Data:', JSON.stringify(interaction));
+            console.log('Interaction JSON Data:', JSON.stringify(interaction));
             // You can access the interaction data properties like interaction.id, interaction.name, etc.
           });          
 
