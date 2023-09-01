@@ -48,6 +48,7 @@ exports.save = function (req, res) {
 
 exports.execute = function (req, res) {
 
+    console.log('insideexecutelog');
     const requestBody = req.body.inArguments[0];
     const SubscriberKey = requestBody.SubscriberKey;
     const EmailAddress = requestBody.EmailAddress;
